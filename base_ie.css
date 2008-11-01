@@ -1,0 +1,28 @@
+/* clearfix */
+.clearfix {
+  zoom: 1;
+}
+
+/* y djoo quip gs? 
+ * ie truncates the bottom part of qypgj characters (i'm sure that even has a name) when you set line-height
+ * this fixes that but has the unfortunate side effect of misaligning the bg image... oh well
+ * */
+#header h1 a {
+  line-height: 116% !important;
+}
+#menu {
+  margin-top: -1.5em !important;
+}
+
+/* ie7 stupidly aligns the bg 49px to the right */
+#sidebar {
+  background-position: 23px 0;
+}
+
+/* random ie stupidity. i'm SO about to * { zoom: 1; } */
+#wrapper {
+  zoom: 1;
+}
+#sidebar * {
+  zoom: 1;
+}
