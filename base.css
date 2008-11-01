@@ -504,13 +504,17 @@ fieldset textarea {
 }
 .pageactions {
 	float: left;
+	margin-left: 0px !important;
+}
+.pageactions ul {
+	margin-left: 0px !important;
 }
 .pageactions li {
 	padding-top: 0px !important;
 }
 .pageactions li a {
-	background-repeat:no-repeat;
-	display:block;
+	color: #9A9A9A;
+	font-weight: normal;
 }
 
 /* selected */
