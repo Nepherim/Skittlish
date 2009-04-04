@@ -70,11 +70,7 @@ function getCookie(name) {
 
 /* el customizer */
 function loadPreferences() {
-  var cookie = getCookie('skittlish');
-  if (cookie == '') {
-    cookie = 'che fixed orange';
-  }
-  document.getElementsByTagName('body')[0].className = cookie;
+  document.getElementsByTagName('body')[0].className = (getCookie('skittlish') || g_DefaultStyle);
 }
 window.onload = function() {
   var o = document.getElementById("options");

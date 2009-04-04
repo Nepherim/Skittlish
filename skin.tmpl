@@ -1,196 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta name="generator" content="HTML Tidy for Windows (vers 11 August 2008), see www.w3.org" />
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+	<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
 
-  <title>$WikiTitle | {$Group} / {$Title} $ActionTitle</title>
-  <link href="$SkinDirUrl/base.css" rel="stylesheet" type="text/css" />
-  <script src="$SkinDirUrl/app.js" type="text/javascript">
-</script><!--[if IE]>
+	<title>$WikiTitle {$Group}/{$Titlespaced}</title>
+	<link href="$SkinDirUrl/base.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">g_DefaultStyle="$skittlish_DefaultStyle";</script>
+	<script type="text/javascript" src="$SkinDirUrl/app.js"></script>
+<!--[if IE]>
 <link href="$SkinDirUrl/base_ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--HTMLHeader-->
 </head>
 
-<body class="che fixed blue">
-  <script type="text/javascript">
+<body class="$skittlish_Style">
+<script type="text/javascript">
 //<![CDATA[
-  loadPreferences()
-  //]]>
-  </script>
+	loadPreferences()
+//]]>
+</script>
 
-  <div id="wrapper">
-    <!--PageHeaderFmt-->
-    <div id="header" class="clearfix">
-		<!--PageTitleFmt-->
-      <div id="title" class="clearfix">
-        <h1><a href="http://evil.che.lu/">evil.che.lu</a></h1>
-      </div>
-		<!--/PageTitleFmt-->
+	<div id="wrapper">
+		<!--PageHeaderFmt-->
+		<div id="header" class="clearfix">
+			<div id="title" class="clearfix">
+				<!--wiki:{$SiteGroup}.{$SkinName}-SiteHeader {$Group}.SiteHeader {$SiteGroup}.SiteHeader -->
+			</div>
 
-      <h2>Sections</h2>
-      <ul id="menu">
-        <li class="selected"><a class="selected" href="http://evil.che.lu/">home</a></li>
+			<!--PageTabsFmt-->
+			<!--wiki:{$SiteGroup}.{$SkinName}-SiteNav {$Group}.SiteNav {$SiteGroup}.SiteNav -->
+			<!--/PageTabsFmt-->
+		</div>
+		<!--/PageHeaderFmt-->
 
-        <li><a href="http://evil.che.lu/projects">projects</a></li>
-      </ul>
-    </div>
-    <!--/PageHeaderFmt-->
+		<div id="contentwrapper" class="clearfix">
+			<div id="content">
+				<div id="innerwrapper">
+					<!--PageTitleFmt-->
+					<a href='{$ScriptUrl}/{$Group}' class="pagegroup">{$Group}</a>
+					<h2 class='title'><a href='{$PageUrl}'>{$Titlespaced}</a></h2>
+					<!--/PageTitleFmt-->
 
-    <div id="contentwrapper" class="clearfix">
-      <div id="content">
-        <div id="innerwrapper">
-          <div class="article">
-            <h2 class="title"><a href="http://evil.che.lu/2008/4/30/ann-braid-0-4-piston-lookalike-for-git">ANN: braid 0.4 - piston lookalike for git</a></h2>
-
-            <p class="meta">written by Cristi Balan on April 30th, 2008 @ 09:15 PM</p>
-
-            <div class="body">
-              <p><a href="http://evil.che.lu/projects/braid">Braid</a> is a simple tool to help track git and svn vendor branches in a git repository.</p>
-            </div>
-
-            <div class="footer">
-              <h4 class="meta">posted in:</h4>
-              <p><a href="http://evil.che.lu/development">Development</a></p>
-
-              <h4 class="meta">tags:</h4>
-              <p><a href="http://evil.che.lu/tags/bdd" rel="tag">bdd</a>, <a href="http://evil.che.lu/tags/braid" rel="tag">braid</a>, <a href="http://evil.che.lu/tags/giston" rel="tag">giston</a>, <a href="http://evil.che.lu/tags/git" rel="tag">git</a>, <a href="http://evil.che.lu/tags/piston" rel="tag">piston</a>, <a href="http://evil.che.lu/tags/ruby" rel="tag">ruby</a>, <a href="http://evil.che.lu/tags/svn" rel="tag">svn</a></p>
-
-              <h4 class="meta">comments are closed</h4>
-            </div>
-
-            <div class="comments">
-              <a href="http://evil.che.lu/2008/4/30/ann-braid-0-4-piston-lookalike-for-git#comments">3 comments</a>
-            </div>
-          
-						<!--PageText-->
-					
-					</div>
-        </div>
-      </div>
-
-      <div id="sidebar">
-			<!--PageLeftFmt-->
-        <div class="boxy tall">
-					<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
+					<!--PageText-->
 				</div>
-				
-        <div class="boxy tall">
-          <h3>About</h3>
+			</div>
 
-          <p>I'm Cristi Balan, a freelance web developer currently living in Bucharest, Romania.</p>
+			<div id="sidebar">
+			<!--PageLeftFmt-->
+				<!--PageSearchFmt-->
+				<div class="boxy short">
+					<div id="search">
+						<h3>Search</h3>
 
-          <p id="subscribe"><a class="feed" href="http://feeds.feedburner.com/evilchelu">subscribe to my feed</a></p>
+						<form id="searchform" action='$ScriptUrl'>
+						<fieldset>
+							<input type='hidden' name='n' value='{$FullName}' />
+							<input type='hidden' name='action' value='search' />
+							<input class='searchBox' type='text' id='q' name='q' value="" />
+							<input class='searchButton' type='submit' value='$[Go]' />
+						</fieldset>
+						</form>
+					</div>
+				</div>
+				<!--/PageSearchFmt-->
 
-          <div id="search">
-					<!--PageSearchFmt-->
-            <h3>Search</h3>
-
-            <form method="get" action="/search">
-              <fieldset>
-                <input class="text" id="q" value="" name="q" type="text" />
-              </fieldset>
-            </form>
-					<!--/PageSearchFmt-->
-          </div>
-        </div>
-
-        <div class="boxy tall minor">
-          <h3>Recent</h3>
-
-          <dl>
-            <dt>Articles <a class="feed" href="http://feeds.feedburner.com/evilchelu"><span>feed</span></a></dt>
-
-            <dd>
-              <ul>
-                <li><a href="http://evil.che.lu/2007/8/14/using-git-to-track-changes-to-mephisto">Using git to track changes to mephisto</a> <em>(August 14th)</em></li>
-              </ul>
-            </dd>
-
-            <dt>Comments <a class="feed" href="http://feeds.feedburner.com/evilchelu_comments"><span>feed</span></a></dt>
-
-            <dd>
-              <ul>
-                <li><a href="http://dysinger.net/2008/04/29/replacing-braid-or-piston-for-git-with-40-lines-of-rake/">Tim Dysinger</a> on <a href="http://evil.che.lu/2008/4/30/ann-braid-0-4-piston-lookalike-for-git#comment-984">ANN: braid 0.4 - piston lookalike for git</a></li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-
-        <div class="boxy short">
-          <h3>Archives</h3>
-          <ul>
-            <li><a href="http://evil.che.lu/archives/2008/4">April 2008</a> (1)</li>
-          </ul>
-        </div>
-
-        <div class="boxy short">
-          <h3>Classification</h3>
-          <dl>
-            <dt>Categories</dt>
-
-            <dd>
-              <ul>
-                <li><a href="http://evil.che.lu/development">Development</a> (15)</li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-
-        <div class="boxy tall">
-          <h3>People</h3>
-          <dl>
-            <dt>Local peeps</dt>
-
-            <dd><a href="http://tase.ro/">Adrian Tanase</a></dd>
-
-            <dt>World wide posse</dt>
-
-            <dd><a href="http://iamrice.org/">Damien Tanner</a></dd>
-          </dl>
-        </div>
-      <!--/PageLeftFmt-->
-      </div>
+				<div class="boxy tall">
+					<!--wiki:{$SiteGroup}.{$SkinName}-SideBar {$Group}.SideBar {$SiteGroup}.SideBar-->
+				</div>
+			<!--/PageLeftFmt-->
+			</div>
 		</div>
 
-    <div id="options">
-      <h2>Options:</h2>
+		<div id="options-container">
+			<!--PageOptionsFmt-->
+			<div id="options">
+				<h2>Options:</h2>
+				<ul id="option_size">
+					<li title="size: fixed" id="option_size_fixed" class="fixed"><a><span>fixed</span></a></li>
+					<li title="size: fluid" id="option_size_fluid" class="fluid"><a><span>fluid</span></a></li>
+				</ul>
 
-      <h3>Size</h3>
-      <ul id="option_size">
-        <li title="size: fixed" id="option_size_fixed" class="fixed"><a><span>fixed</span></a></li>
-        <li title="size: fluid" id="option_size_fluid" class="fluid"><a><span>fluid</span></a></li>
-      </ul>
-
-      <h3>Colors</h3>
-      <ul id="option_color">
-        <li title="color: orange" id="option_color_orange" class="orange"><a><span>orange</span></a></li>
-        <li title="color: blue" id="option_color_blue" class="blue"><a><span>blue</span></a></li>
-        <li title="color: green" id="option_color_green" class="green"><a><span>green</span></a></li>
-        <li title="color: pink" id="option_color_pink" class="pink"><a><span>pink</span></a></li>
-        <li title="color: cyan" id="option_color_cyan" class="cyan"><a><span>cyan</span></a></li>
-        <li title="color: red" id="option_color_red" class="red"><a><span>red</span></a></li>
-        <li title="color: violet" id="option_color_violet" class="violet"><a><span>violet</span></a></li>
-      </ul>
+				<ul id="option_color">
+					<li title="color: orange" id="option_color_orange" class="orange"><a><span>orange</span></a></li>
+					<li title="color: blue" id="option_color_blue" class="blue"><a><span>blue</span></a></li>
+					<li title="color: green" id="option_color_green" class="green"><a><span>green</span></a></li>
+					<li title="color: pink" id="option_color_pink" class="pink"><a><span>pink</span></a></li>
+					<li title="color: cyan" id="option_color_cyan" class="cyan"><a><span>cyan</span></a></li>
+					<li title="color: red" id="option_color_red" class="red"><a><span>red</span></a></li>
+					<li title="color: violet" id="option_color_violet" class="violet"><a><span>violet</span></a></li>
+				</ul>
+			</div>
+			<!--/PageOptionsFmt-->
 
 			<!--PageActionFmt-->
-			<br />
 			<div class="pageactions">
-				<!--wiki:{$SiteGroup}.PageActions-->
+				<!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->
 			</div>
 			<!--/PageActionFmt-->
-    </div>
-
-    <div id="footer">
-		<!--PageFooterFmt-->
-      <p>Copyright &Acirc;&copy; 2006, Cristi Balan. Valid <a href="http://validator.w3.org/check/referer">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.</p>
-
-      <p>Using <a href="http://evil.che.lu/projects/skittlish">skittlish</a> on <a href="http://publishwithimpunity.com/">mephisto</a>.</p>
-    <!--/PageFooterFmt-->
 		</div>
-  </div>
+
+		<div id="footer">
+		<!--PageFooterFmt-->
+			<!--wiki:{$SiteGroup}.{$SkinName}-SiteFooter {$Group}.SiteFooter {$SiteGroup}.SiteFooter -->
+		<!--/PageFooterFmt-->
+		</div>
+	</div>
+<!--HTMLFooter-->
 </body>
 </html>
