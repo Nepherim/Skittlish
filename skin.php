@@ -7,12 +7,20 @@
  *    http://www.opensource.org/licenses/mit-license.php
  *    http://www.gnu.org/licenses/gpl.html
  */
-global $FmtPV, $SkinMode, $PageLogoUrl, $PageLogoWidth, $RecipeInfo, $HTMLStylesFmt;
+global $FmtPV, $SkinStyle, $PageLogoUrl, $PageLogoWidth, $RecipeInfo, $HTMLStylesFmt;
 $FmtPV['$SkinName'] = '"skittlish"';
 $FmtPV['$SkinVersion'] = '"0.1.0"';
 
-SDV($skittlish_DefaultStyle,'fixed orange');
-if (!empty($PageLogoUrl)) {
+# Default style
+global $SkinStyle;
+$ValidSkinStyles = array('fixed', 'fluid');
+if ( isset($_GET['style']) && in_array($_GET['style'], $ValidSkinStyles) ) {
+	$SkinStyle = $_GET['style'];
+} elseif ( !in_array($SkinStyle, $ValidSkinStyles) ) {
+	$SkinStyle = 'fixed';
+}
+
+if (!empty($PageLogoUrl) && !empty($PageLogoUrlWidth)) {
 	$HTMLStylesFmt['skittlish'] = '#header h1 a {padding-left: ' .$PageLogoWidth .'; background: url(' .$PageLogoUrl .') left bottom no-repeat;}';
 }
 
@@ -41,7 +49,7 @@ global $LinkPageCreateFmt;
 SDV($LinkPageCreateFmt, "<a class='createlinktext' href='\$PageUrl?action=edit'>\$LinkText</a>");
 
 # Default color scheme
-global $SkinColor, $ValidSkinColors;
+global $SkinColor, $ValidSkinColors, $skittlish_DefaultStyle;
 if ( !is_array($ValidSkinColors) ) $ValidSkinColors = array();
 array_push($ValidSkinColors, 'blue', 'cyan', 'green', 'orange', 'pink', 'red', 'violet');
 
@@ -50,6 +58,8 @@ if ( isset($_GET['color']) && in_array($_GET['color'], $ValidSkinColors) ) {
 } elseif ( !in_array($SkinColor, $ValidSkinColors) ) {
 	$SkinColor = 'orange';
 }
+
+$skittlish_DefaultStyle=$SkinStyle .' ' .$SkinColor;
 
 # Override pmwiki styles otherwise they will override styles declared in css
 global $HTMLStylesFmt;
