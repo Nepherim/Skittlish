@@ -95,7 +95,7 @@ ol.list li {
 #header h1 a:hover {
 	text-decoration: none;
 }
-#menu {
+#menu, #header ul {
 	clear: both;
 	float: right;
 	display: inline;
@@ -103,19 +103,19 @@ ol.list li {
 	margin-right: 30px;
 	text-align: right;
 }
-#menu li {
+#menu li, #header ul li {
 	display: inline;
 	margin-right: 10px;
 	color: #868686;
 }
-#menu a, .pageactions a {
+#menu a, .pageactions a, #header ul a {
 	color: #868686;
 	font-weight: bold;
 	text-transform: lowercase;
 }
-#menu a:hover, .pageactions a:hover {
+#menu a:hover, .pageactions a:hover, #header ul a:hover {
 }
-#menu li.selected a, #menu li a.selflink {
+#menu li.selected a, #menu li a.selflink, #header ul li.selected a, #header ul li a.selflink {
 	color: #fff;
 }
 
@@ -645,7 +645,7 @@ a.createlink { text-decoration:none; position:relative; top:-0.5em; font-weight:
 	padding-bottom: 10px;
 	font-weight: bold;
 	}
-#menu .createlink { display: none; }
+#menu .createlink, #header ul .createlink { display: none; }
 .wikimessage {
 	color: red;
 	font-weight: bold;
