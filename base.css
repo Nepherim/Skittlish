@@ -466,6 +466,9 @@ fieldset textarea {
 .boxy ul dt, .boxy dl ul {
 	margin-top: 0 !important;
 }
+#sidebar .sidehead {
+	margin-top: 20px;
+}
 
 /* feed icons */
 .feed {
