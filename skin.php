@@ -1,11 +1,11 @@
 <?php if (!defined('PmWiki')) exit();
 /* PmWiki Skittlish skin
  *
- * Examples at: http://pmwiki.com/Cookbook/DropShadow and http://solidgone.com/Skins/
+ * Examples at: http://pmwiki.com/Cookbook/Skittlish and http://solidgone.com/Skins/
  * Copyright (c) 2009 David Gilbert
- * Dual licensed under the MIT and GPL licenses:
- *    http://www.opensource.org/licenses/mit-license.php
- *    http://www.gnu.org/licenses/gpl.html
+ * This work is licensed under a Creative Commons Attribution-Share Alike 3.0 United States License.
+ * Please retain the links in the footer.
+ * http://creativecommons.org/licenses/by-sa/3.0/us/
  */
 global $FmtPV, $SkinStyle, $PageLogoUrl, $PageLogoWidth, $RecipeInfo, $HTMLStylesFmt;
 $FmtPV['$SkinName'] = '"skittlish"';

@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, #sidebar .sidehead {
 }
 h1 { font-size: 2.6em; }
 h2 { font-size: 2.1em; }
-h3, #sidebar .sidehead { font-size: 2.9em; }
+h3 { font-size: 1.9em; }
 h4 { font-size: 1.7em; }
 h5 { font-size: 1.5em; }
 h6 { font-size: 1.3em; }
@@ -640,6 +640,8 @@ body.violet #sidebar .tall	{ background-image: url(images/x_violet_boxy_tall.gif
 ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
 .varlink, pre, code.escaped { font-size: 110% !important; }
 .vspace {margin-top:1em; }
+.indent { margin-left:40px; }
+.outdent { margin-left:40px; text-indent:-40px; }
 a.createlinktext { text-decoration:none; border-bottom:none; }
 a.createlink { text-decoration:none; position:relative; top:-0.5em; font-weight:bold; font-size:smaller; border-bottom:none; }
 .readmore {
