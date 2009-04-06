@@ -9,7 +9,7 @@
  */
 global $FmtPV, $SkinStyle, $PageLogoUrl, $PageLogoWidth, $RecipeInfo, $HTMLStylesFmt;
 $FmtPV['$SkinName'] = '"Skittlish"';
-$FmtPV['$SkinVersion'] = '"0.1.1"';
+$FmtPV['$SkinVersion'] = '"0.1.2"';
 
 # Default style
 global $SkinStyle;
