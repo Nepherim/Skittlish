@@ -8,8 +8,8 @@
  * http://creativecommons.org/licenses/by-sa/3.0/us/
  */
 global $FmtPV, $SkinStyle, $PageLogoUrl, $PageLogoWidth, $RecipeInfo, $HTMLStylesFmt;
-$FmtPV['$SkinName'] = '"skittlish"';
-$FmtPV['$SkinVersion'] = '"0.1.0"';
+$FmtPV['$SkinName'] = '"Skittlish"';
+$FmtPV['$SkinVersion'] = '"0.1.1"';
 
 # Default style
 global $SkinStyle;
