@@ -1,6 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
-<html>
+<!DOCTYPE html PUBLIC
+ "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>$WikiTitle {$Group}/{$Titlespaced}</title>
 	<link href="$SkinDirUrl/base.css" rel="stylesheet" type="text/css" />
@@ -22,12 +23,14 @@
 	<div id="wrapper">
 		<!--PageHeaderFmt-->
 		<div id="header" class="clearfix">
-			<div id="title" class="clearfix">
-				<!--wiki:{$SiteGroup}.{$SkinName}-SiteHeader {$Group}.SiteHeader {$SiteGroup}.SiteHeader -->
+			<div id="siteheader" class="clearfix">
+				<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader -->
 			</div>
 
 			<!--PageTabsFmt-->
-			<!--wiki:{$SiteGroup}.{$SkinName}-SiteNav {$Group}.SiteNav {$SiteGroup}.SiteNav -->
+			<div id="menu">
+				<!--wiki:{$Group}.SiteNav {$SiteGroup}.SiteNav -->
+			</div>
 			<!--/PageTabsFmt-->
 		</div>
 		<!--/PageHeaderFmt-->
@@ -51,7 +54,7 @@
 					<div id="search">
 						<h3>Search</h3>
 
-						<form id="searchform" action='$ScriptUrl'>
+						<form id="searchform" action='$ScriptUrl' method="post">
 						<fieldset>
 							<input type='hidden' name='n' value='{$FullName}' />
 							<input type='hidden' name='action' value='search' />
@@ -64,7 +67,7 @@
 				<!--/PageSearchFmt-->
 
 				<div class="boxy tall">
-					<!--wiki:{$SiteGroup}.{$SkinName}-SideBar {$Group}.SideBar {$SiteGroup}.SideBar-->
+					<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
 				</div>
 			<!--/PageLeftFmt-->
 			</div>
@@ -99,9 +102,10 @@
 		</div>
 
 		<div id="footer">
-		<!--PageFooterFmt-->
-			<!--wiki:{$SiteGroup}.{$SkinName}-SiteFooter {$Group}.SiteFooter {$SiteGroup}.SiteFooter -->
-		<!--/PageFooterFmt-->
+			<!--PageFooterFmt-->
+				<div class="footer"><!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter--></div>
+			<!--/PageFooterFmt-->
+			<p id="credits"><a href="http://evil.che.lu/projects/skittlish">Skittlish</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>, powered by <a href="http://pmwiki.com/">PmWiki</a></p>
 		</div>
 	</div>
 <!--HTMLFooter-->

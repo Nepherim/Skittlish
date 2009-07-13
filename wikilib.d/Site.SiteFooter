@@ -1,0 +1,15 @@
+version=pmwiki-2.2.1 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1) Gecko/20090624 Firefox/3.5 (.NET CLR 3.5.30729)
+author=
+charset=ISO-8859-1
+csum=
+ctime=1246582656
+host=127.0.0.1
+name=Site.SiteFooter
+rev=6
+targets=
+text=Page last modified on {$LastModified}
+time=1247428435
+author:1247428435=
+diff:1247428435:1247428435:=1c1,12%0a%3c Page last modified on {$LastModified}%0a\ No newline at end of file%0a---%0a> Page last modified on {$LastModified}%0a> %0a> sfsk%0a> f%0a> sf%0a> sd%0a> %0a> %0a> fsd%0a> f%0a> s%0a> d%0a\ No newline at end of file%0a
+host:1247428435=127.0.0.1

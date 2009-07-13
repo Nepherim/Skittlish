@@ -7,7 +7,7 @@
  * ie truncates the bottom part of qypgj characters (i'm sure that even has a name) when you set line-height
  * this fixes that but has the unfortunate side effect of misaligning the bg image... oh well
  * */
-#header h1 a {
+#header .sitetitle a {
   line-height: 116% !important;
 }
 #menu {

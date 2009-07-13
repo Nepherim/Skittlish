@@ -81,21 +81,26 @@ ol.list li {
 	border-bottom: solid 1px #343434;
 	background: #1c1c1c url(images/header_bg.gif) repeat-x;
 }
-#header h1 {
+#siteheader .sitetitle {float:left}
+#siteheader .sitetitle a{display: block}
+#siteheader .sitetag {float: left; clear: left}
+#siteheader .sitetag {margin-top: 10px; color: #868686}
+
+#siteheader .sitetitle {
 	float: left;
 	margin-bottom: 0;
 	font-size: 3em;
 	font-weight: normal;
 }
-#header h1 a {
+#siteheader .sitetitle a {
 	display: block;
-	padding-top: 1em;
 	color: #bababa;
 }
-#header h1 a:hover {
+#siteheader .sitetitle a:hover {
 	text-decoration: none;
+	color: #f79910;
 }
-#menu, #header ul {
+#menu ul {
 	clear: both;
 	float: right;
 	display: inline;
@@ -109,11 +114,23 @@ ol.list li {
 	color: #868686;
 }
 #menu a, .pageactions a, #header ul a {
-	color: #868686;
 	font-weight: bold;
 	text-transform: lowercase;
+	text-decoration: none;
 }
-#menu a:hover, .pageactions a:hover, #header ul a:hover {
+
+.pageactions a, #header ul a {
+	color: #868686;
+}
+.pageactions a:hover, #header ul a:hover {
+}
+#menu a {
+	color: #bababa;
+	padding: 4px;
+}
+#menu a:hover {
+	color: #fff;
+	background-color: #c90808;
 }
 #menu li.selected a, #menu li a.selflink, #header ul li.selected a, #header ul li a.selflink {
 	color: #fff;
@@ -175,8 +192,16 @@ h3.content {
 #footer a:hover {
 	color: #eaeaea;
 }
+#credits {
+	margin-top: 20px;
+}
 
 /* article styles */
+#wikitext h2.section-head {
+	font-weight: bold;
+	font-size: 2.3em;
+	color: #f79910;
+}
 .article, #wikitext {
 	margin-bottom: 20px;
 }
@@ -529,10 +554,10 @@ fieldset textarea {
 #options-container .pageactions {
 	clear: right;
 	float: right;
-	margin-top: 5px;
 }
 .pageactions li a {
 	font-weight: normal;
+	font-size: .8em;
 }
 
 /* selected */
@@ -566,7 +591,7 @@ body.violet #options li.violet,
 
 /* skittlish customizations */
 /* defaults: fixed orange */
-#header h1 a {line-height: .8;}
+#siteheader .sitetitle a {line-height: .8;}
 
 /* skittlish layout: fixed */
 .fixed #wrapper {
@@ -580,63 +605,72 @@ body.violet #options li.violet,
 }
 
 /* skittlish color: blue */
-body.blue .article h2 a	{ color:	#0870c9; }
-body.blue .boxy	{ background-color: #0870c9; }
+body.blue .article h2 a, body.blue #innerwrapper h2 a, body.blue #commentslist h3.content, 
+body.blue #innerwrapper a.pagegroup, body.blue #wikitext h2.section-head, body.blue #siteheader .sitetitle a:hover	{ color:	#0870c9; }
+body.blue .boxy, body.blue #menu a:hover	{ background-color: #0870c9; }
 body.blue #contentwrapper { background-image: url(images/x_blue_sidebar_bg.gif); }
 body.blue #sidebar	{ background-image: url(images/x_blue_sidebar_top.gif); }
 body.blue #sidebar .short { background-image: url(images/x_blue_boxy_short.gif); }
 body.blue #sidebar .tall	{ background-image: url(images/x_blue_boxy_tall.gif); }
 
 /* skittlish color: cyan */
-body.cyan .article h2 a	{ color:	#1088f7; }
-body.cyan .boxy	{ background-color: #1088f7; }
+body.cyan .article h2 a, body.cyan #innerwrapper h2 a, body.cyan #commentslist h3.content, 
+body.cyan #innerwrapper a.pagegroup, body.cyan #wikitext h2.section-head, body.cyan #siteheader .sitetitle a:hover	{ color:	#1088f7; }
+body.cyan .boxy, body.cyan #menu a:hover	{ background-color: #1088f7; }
 body.cyan #contentwrapper { background-image: url(images/x_cyan_sidebar_bg.gif); }
 body.cyan #sidebar	{ background-image: url(images/x_cyan_sidebar_top.gif); }
 body.cyan #sidebar .short { background-image: url(images/x_cyan_boxy_short.gif); }
 body.cyan #sidebar .tall	{ background-image: url(images/x_cyan_boxy_tall.gif); }
 
 /* skittlish color: green */
-body.green .article h2 a	{ color:	#61ac00; }
-body.green .boxy	{ background-color: #61ac00; }
+body.green .article h2 a, body.green #innerwrapper h2 a, body.green #commentslist h3.content, 
+body.green #innerwrapper a.pagegroup, body.green #wikitext h2.section-head, body.green #siteheader .sitetitle a:hover { color:	#61ac00; }
+body.green .boxy, body.green #menu a:hover	{ background-color: #61ac00; }
 body.green #contentwrapper { background-image: url(images/x_green_sidebar_bg.gif); }
 body.green #sidebar	{ background-image: url(images/x_green_sidebar_top.gif); }
 body.green #sidebar .short { background-image: url(images/x_green_boxy_short.gif); }
 body.green #sidebar .tall	{ background-image: url(images/x_green_boxy_tall.gif); }
 
 /* skittlish color: orange */
-body.orange .article h2 a	{ color:	#f79910; }
-body.orange .boxy	{ background-color: #f79910; }
+body.orange .article h2 a, body.orange #innerwrapper h2 a, body.orange #commentslist h3.content, 
+body.orange #innerwrapper a.pagegroup, body.orange #wikitext h2.section-head, body.orange #siteheader .sitetitle a:hover	{ color:	#f79910; }
+body.orange .boxy, body.orange #menu a:hover	{ background-color: #f79910; }
 body.orange #contentwrapper { background-image: url(images/x_orange_sidebar_bg.gif); }
 body.orange #sidebar	{ background-image: url(images/x_orange_sidebar_top.gif); }
 body.orange #sidebar .short { background-image: url(images/x_orange_boxy_short.gif); }
 body.orange #sidebar .tall	{ background-image: url(images/x_orange_boxy_tall.gif); }
 
 /* skittlish color: pink */
-body.pink .article h2 a	{ color:	#f122be; }
-body.pink .boxy	{ background-color: #f122be; }
+body.pink .article h2 a, body.pink #innerwrapper h2 a, body.pink #commentslist h3.content, 
+body.pink #innerwrapper a.pagegroup, body.pink #wikitext h2.section-head, body.pink #siteheader .sitetitle a:hover	{ color:	#f122be; }
+body.pink .boxy, body.pink #menu a:hover	{ background-color: #f122be; }
 body.pink #contentwrapper { background-image: url(images/x_pink_sidebar_bg.gif); }
 body.pink #sidebar	{ background-image: url(images/x_pink_sidebar_top.gif); }
 body.pink #sidebar .short { background-image: url(images/x_pink_boxy_short.gif); }
 body.pink #sidebar .tall	{ background-image: url(images/x_pink_boxy_tall.gif); }
 
 /* skittlish color: red */
-body.red .article h2 a	{ color:	#c90808; }
-body.red .boxy	{ background-color: #c90808; }
+body.red .article h2 a, body.red #innerwrapper h2 a, body.red #commentslist h3.content, 
+body.red #innerwrapper a.pagegroup, body.red #wikitext h2.section-head, body.red #siteheader .sitetitle a:hover	{ color:	#c90808; }
+body.red .boxy, body.red #menu a:hover	{ background-color: #c90808; }
 body.red #contentwrapper { background-image: url(images/x_red_sidebar_bg.gif); }
 body.red #sidebar	{ background-image: url(images/x_red_sidebar_top.gif); }
 body.red #sidebar .short { background-image: url(images/x_red_boxy_short.gif); }
 body.red #sidebar .tall	{ background-image: url(images/x_red_boxy_tall.gif); }
 
 /* skittlish color: violet */
-body.violet .article h2 a	{ color:	#ae3bd4; }
-body.violet .boxy	{ background-color: #ae3bd4; }
+body.violet .article h2 a, body.violet #innerwrapper h2 a, body.violet #commentslist h3.content, 
+body.violet #innerwrapper a.pagegroup, body.violet #wikitext h2.section-head, body.violet #siteheader .sitetitle a:hover	{ color:	#ae3bd4; }
+body.violet .boxy, body.violet #menu a:hover	{ background-color: #ae3bd4; }
 body.violet #contentwrapper { background-image: url(images/x_violet_sidebar_bg.gif); }
 body.violet #sidebar	{ background-image: url(images/x_violet_sidebar_top.gif); }
 body.violet #sidebar .short { background-image: url(images/x_violet_boxy_short.gif); }
 body.violet #sidebar .tall	{ background-image: url(images/x_violet_boxy_tall.gif); }
 
 /* pmwiki */
-#wikiedit textarea {width: 100%;}
+#wikiedit textarea {width: 100%; margin-bottom: 15px}
+#wikitext .quickref p {line-height:2em;}
+#wikitext .quickref {margin-top: 30px;}
 ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
 .varlink, pre, code.escaped { font-size: 110% !important; }
 .vspace {margin-top:1em; }
@@ -644,15 +678,6 @@ ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
 .outdent { margin-left:40px; text-indent:-40px; }
 a.createlinktext { text-decoration:none; border-bottom:none; }
 a.createlink { text-decoration:none; position:relative; top:-0.5em; font-weight:bold; font-size:smaller; border-bottom:none; }
-.readmore {
-	display: block;
-	margin-top: 10px;
-	padding-bottom: 10px;
-	font-weight: bold;
-	}
+.readmore {display: block; margin-top: 10px; padding-bottom: 10px; font-weight: bold; }
 #menu .createlink, #header ul .createlink { display: none; }
-.wikimessage {
-	color: red;
-	font-weight: bold;
-	font-size: 110%;
-	}
+.wikimessage { color: red; font-weight: bold; font-size: 110%; }

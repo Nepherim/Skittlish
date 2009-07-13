@@ -9,7 +9,7 @@
  */
 global $FmtPV, $SkinStyle, $PageLogoUrl, $PageLogoWidth, $RecipeInfo, $HTMLStylesFmt;
 $FmtPV['$SkinName'] = '"Skittlish"';
-$FmtPV['$SkinVersion'] = '"0.1.2"';
+$FmtPV['$SkinVersion'] = '"1.0.0"';
 
 # Default style
 global $SkinStyle;
@@ -21,7 +21,7 @@ if ( isset($_GET['style']) && in_array($_GET['style'], $ValidSkinStyles) ) {
 }
 
 if (!empty($PageLogoUrl) && !empty($PageLogoUrlWidth)) {
-	$HTMLStylesFmt['skittlish'] = '#header h1 a {padding-left: ' .$PageLogoWidth .'; background: url(' .$PageLogoUrl .') left bottom no-repeat;}';
+	$HTMLStylesFmt['skittlish'] = '#header .sitetitle a {padding-left: ' .$PageLogoWidth .'; background: url(' .$PageLogoUrl .') left bottom no-repeat;}';
 }
 
 # Move any (:noleft:) or SetTmplDisplay('PageLeftFmt', 0); directives to variables for access in jScript.
@@ -42,7 +42,21 @@ Markup('fieldsetend', 'inline', '/\\(:fieldsetend:\\)/i', "</fieldset>");
 # ----------------------------------------
 # - Standard Skin Setup
 # ----------------------------------------
+global $PageLogoUrl, $PageLogoUrlHeight, $PageLogoUrlWidth, $HTMLStylesFmt;
+if (!empty($PageLogoUrl)) {
+	if (!isset($PageLogoUrlWidth) || !isset($PageLogoUrlHeight)) {
+		$size = getimagesize($PageLogoUrl);
+		SDV($PageLogoUrlWidth, ($size ?$size[0]+15 :0) .'px');
+		SDV($PageLogoUrlHeight, ($size ?$size[1] :0) .'px');
+	}
+	$HTMLStylesFmt['skittlish'] .=
+		'#siteheader .sitetitle a{height:' .$PageLogoUrlHeight .'; background: url(' .$PageLogoUrl .') left top no-repeat} '.
+		'#siteheader .sitetitle a, #siteheader .sitetag{padding-left: ' .$PageLogoUrlWidth .'} '.
+		'#siteheader .sitetag{margin-top: ' .(44-substr($PageLogoUrlHeight,0,-2)) .'px}';
+}
+
 $FmtPV['$WikiTitle'] = '$GLOBALS["WikiTitle"]';
+$FmtPV['$WikiTag'] = '$GLOBALS["WikiTag"]';
 
 # Define a link stye for new page links
 global $LinkPageCreateFmt;
