@@ -605,7 +605,7 @@ body.violet #options li.violet,
 }
 
 /* skittlish color: blue */
-body.blue .article h2 a, body.blue #innerwrapper h2 a, body.blue #commentslist h3.content, 
+body.blue .article h2 a, body.blue #innerwrapper h2 a, body.blue #commentslist h3.content,
 body.blue #innerwrapper a.pagegroup, body.blue #wikitext h2.section-head, body.blue #siteheader .sitetitle a:hover	{ color:	#0870c9; }
 body.blue .boxy, body.blue #menu a:hover	{ background-color: #0870c9; }
 body.blue #contentwrapper { background-image: url(images/x_blue_sidebar_bg.gif); }
@@ -614,7 +614,7 @@ body.blue #sidebar .short { background-image: url(images/x_blue_boxy_short.gif);
 body.blue #sidebar .tall	{ background-image: url(images/x_blue_boxy_tall.gif); }
 
 /* skittlish color: cyan */
-body.cyan .article h2 a, body.cyan #innerwrapper h2 a, body.cyan #commentslist h3.content, 
+body.cyan .article h2 a, body.cyan #innerwrapper h2 a, body.cyan #commentslist h3.content,
 body.cyan #innerwrapper a.pagegroup, body.cyan #wikitext h2.section-head, body.cyan #siteheader .sitetitle a:hover	{ color:	#1088f7; }
 body.cyan .boxy, body.cyan #menu a:hover	{ background-color: #1088f7; }
 body.cyan #contentwrapper { background-image: url(images/x_cyan_sidebar_bg.gif); }
@@ -623,7 +623,7 @@ body.cyan #sidebar .short { background-image: url(images/x_cyan_boxy_short.gif);
 body.cyan #sidebar .tall	{ background-image: url(images/x_cyan_boxy_tall.gif); }
 
 /* skittlish color: green */
-body.green .article h2 a, body.green #innerwrapper h2 a, body.green #commentslist h3.content, 
+body.green .article h2 a, body.green #innerwrapper h2 a, body.green #commentslist h3.content,
 body.green #innerwrapper a.pagegroup, body.green #wikitext h2.section-head, body.green #siteheader .sitetitle a:hover { color:	#61ac00; }
 body.green .boxy, body.green #menu a:hover	{ background-color: #61ac00; }
 body.green #contentwrapper { background-image: url(images/x_green_sidebar_bg.gif); }
@@ -632,7 +632,7 @@ body.green #sidebar .short { background-image: url(images/x_green_boxy_short.gif
 body.green #sidebar .tall	{ background-image: url(images/x_green_boxy_tall.gif); }
 
 /* skittlish color: orange */
-body.orange .article h2 a, body.orange #innerwrapper h2 a, body.orange #commentslist h3.content, 
+body.orange .article h2 a, body.orange #innerwrapper h2 a, body.orange #commentslist h3.content,
 body.orange #innerwrapper a.pagegroup, body.orange #wikitext h2.section-head, body.orange #siteheader .sitetitle a:hover	{ color:	#f79910; }
 body.orange .boxy, body.orange #menu a:hover	{ background-color: #f79910; }
 body.orange #contentwrapper { background-image: url(images/x_orange_sidebar_bg.gif); }
@@ -641,7 +641,7 @@ body.orange #sidebar .short { background-image: url(images/x_orange_boxy_short.g
 body.orange #sidebar .tall	{ background-image: url(images/x_orange_boxy_tall.gif); }
 
 /* skittlish color: pink */
-body.pink .article h2 a, body.pink #innerwrapper h2 a, body.pink #commentslist h3.content, 
+body.pink .article h2 a, body.pink #innerwrapper h2 a, body.pink #commentslist h3.content,
 body.pink #innerwrapper a.pagegroup, body.pink #wikitext h2.section-head, body.pink #siteheader .sitetitle a:hover	{ color:	#f122be; }
 body.pink .boxy, body.pink #menu a:hover	{ background-color: #f122be; }
 body.pink #contentwrapper { background-image: url(images/x_pink_sidebar_bg.gif); }
@@ -650,7 +650,7 @@ body.pink #sidebar .short { background-image: url(images/x_pink_boxy_short.gif);
 body.pink #sidebar .tall	{ background-image: url(images/x_pink_boxy_tall.gif); }
 
 /* skittlish color: red */
-body.red .article h2 a, body.red #innerwrapper h2 a, body.red #commentslist h3.content, 
+body.red .article h2 a, body.red #innerwrapper h2 a, body.red #commentslist h3.content,
 body.red #innerwrapper a.pagegroup, body.red #wikitext h2.section-head, body.red #siteheader .sitetitle a:hover	{ color:	#c90808; }
 body.red .boxy, body.red #menu a:hover	{ background-color: #c90808; }
 body.red #contentwrapper { background-image: url(images/x_red_sidebar_bg.gif); }
@@ -659,7 +659,7 @@ body.red #sidebar .short { background-image: url(images/x_red_boxy_short.gif); }
 body.red #sidebar .tall	{ background-image: url(images/x_red_boxy_tall.gif); }
 
 /* skittlish color: violet */
-body.violet .article h2 a, body.violet #innerwrapper h2 a, body.violet #commentslist h3.content, 
+body.violet .article h2 a, body.violet #innerwrapper h2 a, body.violet #commentslist h3.content,
 body.violet #innerwrapper a.pagegroup, body.violet #wikitext h2.section-head, body.violet #siteheader .sitetitle a:hover	{ color:	#ae3bd4; }
 body.violet .boxy, body.violet #menu a:hover	{ background-color: #ae3bd4; }
 body.violet #contentwrapper { background-image: url(images/x_violet_sidebar_bg.gif); }
