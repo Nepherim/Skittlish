@@ -52,9 +52,9 @@
 				<!--PageSearchFmt-->
 				<div class="boxy short">
 					<div id="search">
-						<h3>Search</h3>
+						<h3>$[Search]</h3>
 
-						<form id="searchform" action='$ScriptUrl' method="post">
+						<form id="searchform" action='$ScriptUrl' method="get">
 						<fieldset>
 							<input type='hidden' name='n' value='{$FullName}' />
 							<input type='hidden' name='action' value='search' />
@@ -76,20 +76,20 @@
 		<div id="options-container">
 			<!--PageOptionsFmt-->
 			<div id="options">
-				<h2>Options:</h2>
+				<h2>$[Options:]</h2>
 				<ul id="option_size">
-					<li title="size: fixed" id="option_size_fixed" class="fixed"><a><span>fixed</span></a></li>
-					<li title="size: fluid" id="option_size_fluid" class="fluid"><a><span>fluid</span></a></li>
+					<li title="size: fixed" id="option_size_fixed" class="fixed"><a><span>$[fixed]</span></a></li>
+					<li title="size: fluid" id="option_size_fluid" class="fluid"><a><span>$[fluid]</span></a></li>
 				</ul>
 
 				<ul id="option_color">
-					<li title="color: orange" id="option_color_orange" class="orange"><a><span>orange</span></a></li>
-					<li title="color: blue" id="option_color_blue" class="blue"><a><span>blue</span></a></li>
-					<li title="color: green" id="option_color_green" class="green"><a><span>green</span></a></li>
-					<li title="color: pink" id="option_color_pink" class="pink"><a><span>pink</span></a></li>
-					<li title="color: cyan" id="option_color_cyan" class="cyan"><a><span>cyan</span></a></li>
-					<li title="color: red" id="option_color_red" class="red"><a><span>red</span></a></li>
-					<li title="color: violet" id="option_color_violet" class="violet"><a><span>violet</span></a></li>
+					<li title="color: orange" id="option_color_orange" class="orange"><a><span>$[orange]</span></a></li>
+					<li title="color: blue" id="option_color_blue" class="blue"><a><span>$[blue]</span></a></li>
+					<li title="color: green" id="option_color_green" class="green"><a><span>$[green]</span></a></li>
+					<li title="color: pink" id="option_color_pink" class="pink"><a><span>$[pink]</span></a></li>
+					<li title="color: cyan" id="option_color_cyan" class="cyan"><a><span>$[cyan]</span></a></li>
+					<li title="color: red" id="option_color_red" class="red"><a><span>$[red]</span></a></li>
+					<li title="color: violet" id="option_color_violet" class="violet"><a><span>$[violet]</span></a></li>
 				</ul>
 			</div>
 			<!--/PageOptionsFmt-->
@@ -105,7 +105,7 @@
 			<!--PageFooterFmt-->
 				<div class="footer"><!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter--></div>
 			<!--/PageFooterFmt-->
-			<p id="credits"><a href="http://evil.che.lu/projects/skittlish">Skittlish</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>, powered by <a href="http://pmwiki.com/">PmWiki</a></p>
+			<p id="credits"><a href="http://evil.che.lu/projects/skittlish">Skittlish</a> $[theme adapted by] <a href="http://solidgone.org/Skins/">David Gilbert</a>, $[powered by] <a href="http://pmwiki.com/">PmWiki</a></p>
 		</div>
 	</div>
 <!--HTMLFooter-->

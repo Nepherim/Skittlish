@@ -1,10 +1,7 @@
 /* change default html styles */
-* {
+html, body, p, h1, h2, h3, h4, h5, h6, fieldset, ul, li{
 	margin: 0;
 	padding: 0;
-}
-li {
-	list-style-type: none;
 }
 a img {
 	border-style: none;
@@ -58,13 +55,6 @@ ul.list, ol.list {
 	margin-bottom: .5em;
 	color: #1b1b1b;
 }
-ul.list li {
-	list-style-type: disc;
-}
-ol.list li {
-	list-style-type: decimal;
-}
-
 
 /* layout */
 #wrapper {
@@ -172,6 +162,9 @@ h3.content {
 #sidebar h6 a {
 	font-weight: normal;
 }
+#sidebar ul li, #sidebar ol li {
+	list-style-type: none;
+}
 #subscribe a {
 	font-weight: normal;
 	font-size: 1.4em;
@@ -276,12 +269,6 @@ h3.content {
 .body li, #wikitext li {
 	margin-bottom: .5em;
 	color: #1b1b1b;
-}
-.body ul li, #wikitext ul li {
-	list-style-type: disc;
-}
-.body ol li, #wikitext ol li {
-	list-style-type: decimal;
 }
 .body h1, .body h2, .body h3, .body h4, .body h5, .body h6,
 #wikitext h1, #wikitext h2, #wikitext h3, #wikitext h4, #wikitext h5, #wikitext h6 {
@@ -530,6 +517,9 @@ fieldset textarea {
 	margin-top: 10px;
 	margin-right: 40px;
 }
+#options-container ul li, #options-container ol li {
+	list-style-type: none;
+}
 #options ul, .pageactions ul {
 	float: left;
 	display: inline;
@@ -678,6 +668,11 @@ ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
 .outdent { margin-left:40px; text-indent:-40px; }
 a.createlinktext { text-decoration:none; border-bottom:none; }
 a.createlink { text-decoration:none; position:relative; top:-0.5em; font-weight:bold; font-size:smaller; border-bottom:none; }
-.readmore {display: block; margin-top: 10px; padding-bottom: 10px; font-weight: bold; }
+.page-navigation{clear:both; padding:20px 0}
+.blogit-next-entries a, .blogit-previous-entries a {font-size:130%; font-weight: bold;}
+.blogit-next-entries a {float:right;}
+.blogit-previous-entries a {float:left;}
+.blogit-listmore {text-align:right;}
+.blogit-readmore {display: block; margin-top: 10px; padding-bottom: 10px; font-weight: bold; }
 #menu .createlink, #header ul .createlink { display: none; }
 .wikimessage { color: red; font-weight: bold; font-size: 110%; }
