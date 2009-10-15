@@ -7,4 +7,5 @@ host=127.0.0.1
 name=Site.XLPage-skittlish
 rev=3
 targets=
-text=### Skittlish Template%0a  'Search' => '',%0a  'Options:' => '',%0a  'fixed' => '',%0a  'fluid' => '',%0a  'orange' => '',%0a  'blue' => '',%0a  'green' => '',%0a  'pink' => '',%0a  'cyan' => '',%0a  'red' => '',%0a  'violet' => '',%0a  'theme adapted by' => '',%0a  'powered by' => '',%0a%0a### Site.Blogit-SkinTemplate-skittish%0a%0a  ## #meta-data-head%0a  'written' => '',%0a  'by' => ''
+text=### Skittlish Template%0a  'Search' => '',%0a  'Options:' => '',%0a  'fixed' => '',%0a  'fluid' => '',%0a  'orange' => '',%0a  'blue' => '',%0a  'green' => '',%0a  'pink' => '',%0a  'cyan' => '',%0a  'red' => '',%0a  'violet' => '',%0a  'theme adapted by' => '',%0a  'powered by' => '',%0a%0a### Site.Blogit-SkinTemplate-skittish%0a%0a  ## #meta-data-head%0a  'written' => '',%0a  'by' => '',%0a  'Page last modified on {*$LastModified}' => ''%0a
+

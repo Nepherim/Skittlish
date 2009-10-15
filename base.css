@@ -135,7 +135,7 @@ ul.list, ol.list {
 	margin-right: -380px;
 	background: url(images/content_top_bg.gif) repeat-x;
 }
-h3.content {
+h2.content {
 	margin-top: 2em;
 	margin-bottom: 1em;
 	color: #e68800;
@@ -296,7 +296,7 @@ h3.content {
 }
 
 /* comments list */
-#commentslist h3.content {
+#commentslist h2 {
 	color: #e68800;
 	text-transform: uppercase;
 }
@@ -308,7 +308,7 @@ h3.content {
 	width: 100%;
 	margin-bottom: 2em;
 }
-#commentslist li.comment .meta {
+#commentslist li.comment .blogit-comment-header {
 	display: block;
 	margin-bottom: .5em;
 	padding: .55em 3%;
@@ -321,7 +321,7 @@ h3.content {
 	border: dotted 1px #cacaca;
 	background-color: #f6f6f6;
 }
-#commentslist li.by-author .meta {
+#commentslist li.by-author .blogit-comment-header {
 	margin-bottom: 0;
 	border-bottom-style: none;
 	background-color: #ddd;
@@ -332,21 +332,21 @@ h3.content {
 #commentslist ul li, #commentslist ol li {
 	list-style-type: none;
 }
-.comment .body {
+.comment .commenttext {
 	padding: 0 3%;
 	font-size: .9em;
 	display: block;
 	margin-top: 10px;
 }
-.comment .body p {
+.comment .commenttext p {
 	margin-bottom: 1em;
 }
-.comment .body h1 { font-size: 2.0em; }
-.comment .body h2 { font-size: 1.8em; }
-.comment .body h3 { font-size: 1.6em; }
-.comment .body h4 { font-size: 1.4em; }
-.comment .body h5 { font-size: 1.3em; }
-.comment .body h6 { font-size: 1.2em; }
+.comment .commenttext h1 { font-size: 2.0em; }
+.comment .commenttext h2 { font-size: 1.8em; }
+.comment .commenttext h3 { font-size: 1.6em; }
+.comment .commenttext h4 { font-size: 1.4em; }
+.comment .commenttext h5 { font-size: 1.3em; }
+.comment .commenttext h6 { font-size: 1.2em; }
 
 /* forms */
 #comment-message, #comment-errors, .wikimessage {
@@ -595,7 +595,7 @@ body.violet #options li.violet,
 }
 
 /* skittlish color: blue */
-body.blue .article h2 a, body.blue #innerwrapper h2 a, body.blue #commentslist h3.content,
+body.blue .article h2 a, body.blue #innerwrapper h2 a, body.blue #commentslist h2,
 body.blue #innerwrapper a.pagegroup, body.blue #wikitext h2.section-head, body.blue #siteheader .sitetitle a:hover	{ color:	#0870c9; }
 body.blue .boxy, body.blue #menu a:hover	{ background-color: #0870c9; }
 body.blue #contentwrapper { background-image: url(images/x_blue_sidebar_bg.gif); }
@@ -604,7 +604,7 @@ body.blue #sidebar .short { background-image: url(images/x_blue_boxy_short.gif);
 body.blue #sidebar .tall	{ background-image: url(images/x_blue_boxy_tall.gif); }
 
 /* skittlish color: cyan */
-body.cyan .article h2 a, body.cyan #innerwrapper h2 a, body.cyan #commentslist h3.content,
+body.cyan .article h2 a, body.cyan #innerwrapper h2 a, body.cyan #commentslist h2,
 body.cyan #innerwrapper a.pagegroup, body.cyan #wikitext h2.section-head, body.cyan #siteheader .sitetitle a:hover	{ color:	#1088f7; }
 body.cyan .boxy, body.cyan #menu a:hover	{ background-color: #1088f7; }
 body.cyan #contentwrapper { background-image: url(images/x_cyan_sidebar_bg.gif); }
@@ -613,7 +613,7 @@ body.cyan #sidebar .short { background-image: url(images/x_cyan_boxy_short.gif);
 body.cyan #sidebar .tall	{ background-image: url(images/x_cyan_boxy_tall.gif); }
 
 /* skittlish color: green */
-body.green .article h2 a, body.green #innerwrapper h2 a, body.green #commentslist h3.content,
+body.green .article h2 a, body.green #innerwrapper h2 a, body.green #commentslist h2,
 body.green #innerwrapper a.pagegroup, body.green #wikitext h2.section-head, body.green #siteheader .sitetitle a:hover { color:	#61ac00; }
 body.green .boxy, body.green #menu a:hover	{ background-color: #61ac00; }
 body.green #contentwrapper { background-image: url(images/x_green_sidebar_bg.gif); }
@@ -622,7 +622,7 @@ body.green #sidebar .short { background-image: url(images/x_green_boxy_short.gif
 body.green #sidebar .tall	{ background-image: url(images/x_green_boxy_tall.gif); }
 
 /* skittlish color: orange */
-body.orange .article h2 a, body.orange #innerwrapper h2 a, body.orange #commentslist h3.content,
+body.orange .article h2 a, body.orange #innerwrapper h2 a, body.orange #commentslist h2,
 body.orange #innerwrapper a.pagegroup, body.orange #wikitext h2.section-head, body.orange #siteheader .sitetitle a:hover	{ color:	#f79910; }
 body.orange .boxy, body.orange #menu a:hover	{ background-color: #f79910; }
 body.orange #contentwrapper { background-image: url(images/x_orange_sidebar_bg.gif); }
@@ -631,7 +631,7 @@ body.orange #sidebar .short { background-image: url(images/x_orange_boxy_short.g
 body.orange #sidebar .tall	{ background-image: url(images/x_orange_boxy_tall.gif); }
 
 /* skittlish color: pink */
-body.pink .article h2 a, body.pink #innerwrapper h2 a, body.pink #commentslist h3.content,
+body.pink .article h2 a, body.pink #innerwrapper h2 a, body.pink #commentslist h2,
 body.pink #innerwrapper a.pagegroup, body.pink #wikitext h2.section-head, body.pink #siteheader .sitetitle a:hover	{ color:	#f122be; }
 body.pink .boxy, body.pink #menu a:hover	{ background-color: #f122be; }
 body.pink #contentwrapper { background-image: url(images/x_pink_sidebar_bg.gif); }
@@ -640,7 +640,7 @@ body.pink #sidebar .short { background-image: url(images/x_pink_boxy_short.gif);
 body.pink #sidebar .tall	{ background-image: url(images/x_pink_boxy_tall.gif); }
 
 /* skittlish color: red */
-body.red .article h2 a, body.red #innerwrapper h2 a, body.red #commentslist h3.content,
+body.red .article h2 a, body.red #innerwrapper h2 a, body.red #commentslist h2,
 body.red #innerwrapper a.pagegroup, body.red #wikitext h2.section-head, body.red #siteheader .sitetitle a:hover	{ color:	#c90808; }
 body.red .boxy, body.red #menu a:hover	{ background-color: #c90808; }
 body.red #contentwrapper { background-image: url(images/x_red_sidebar_bg.gif); }
@@ -649,7 +649,7 @@ body.red #sidebar .short { background-image: url(images/x_red_boxy_short.gif); }
 body.red #sidebar .tall	{ background-image: url(images/x_red_boxy_tall.gif); }
 
 /* skittlish color: violet */
-body.violet .article h2 a, body.violet #innerwrapper h2 a, body.violet #commentslist h3.content,
+body.violet .article h2 a, body.violet #innerwrapper h2 a, body.violet #commentslist h2,
 body.violet #innerwrapper a.pagegroup, body.violet #wikitext h2.section-head, body.violet #siteheader .sitetitle a:hover	{ color:	#ae3bd4; }
 body.violet .boxy, body.violet #menu a:hover	{ background-color: #ae3bd4; }
 body.violet #contentwrapper { background-image: url(images/x_violet_sidebar_bg.gif); }
@@ -668,10 +668,10 @@ ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
 .outdent { margin-left:40px; text-indent:-40px; }
 a.createlinktext { text-decoration:none; border-bottom:none; }
 a.createlink { text-decoration:none; position:relative; top:-0.5em; font-weight:bold; font-size:smaller; border-bottom:none; }
-.page-navigation{clear:both; padding:20px 0}
-.blogit-next-entries a, .blogit-previous-entries a {font-size:130%; font-weight: bold;}
-.blogit-next-entries a {float:right;}
-.blogit-previous-entries a {float:left;}
+.blogit-page-navigation{clear:both; padding:20px 0}
+.blogit-older-entries a, .blogit-newer-entries a {font-size:130%; font-weight: bold;}
+.blogit-older-entries a {float:right;}
+.blogit-newer-entries a {float:left;}
 .blogit-listmore {text-align:right;}
 .blogit-readmore {display: block; margin-top: 10px; padding-bottom: 10px; font-weight: bold; }
 #menu .createlink, #header ul .createlink { display: none; }
