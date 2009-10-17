@@ -21,10 +21,11 @@
 </script>
 
 	<div id="wrapper">
-		<!--PageHeaderFmt-->
 		<div id="header" class="clearfix">
 			<div id="siteheader" class="clearfix">
+				<!--PageHeaderFmt-->
 				<!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader -->
+				<!--/PageHeaderFmt-->
 			</div>
 
 			<!--PageTabsFmt-->
@@ -33,7 +34,6 @@
 			</div>
 			<!--/PageTabsFmt-->
 		</div>
-		<!--/PageHeaderFmt-->
 
 		<div id="contentwrapper" class="clearfix">
 			<div id="content">
@@ -50,7 +50,6 @@
 			</div>
 
 			<div id="sidebar">
-			<!--PageLeftFmt-->
 				<!--PageSearchFmt-->
 				<div class="boxy short">
 					<div id="search">
@@ -68,10 +67,11 @@
 				</div>
 				<!--/PageSearchFmt-->
 
+				<!--PageRightFmt-->
 				<div class="boxy tall">
 					<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
 				</div>
-			<!--/PageLeftFmt-->
+				<!--/PageRightFmt-->
 			</div>
 		</div>
 
@@ -107,7 +107,7 @@
 			<!--PageFooterFmt-->
 				<div class="footer"><!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter--></div>
 			<!--/PageFooterFmt-->
-			<p id="credits"><a href="http://evil.che.lu/projects/skittlish">Skittlish</a> $[theme adapted by] <a href="http://solidgone.org/Skins/">David Gilbert</a>, $[powered by] <a href="http://pmwiki.com/">PmWiki</a></p>
+			<p id="credits"><a href="http://evil.che.lu/projects/skittlish">Skittlish</a> $[theme adapted by] <a href="http://solidgone.org/Skins/">David Gilbert</a>, $[powered by] <!--function:dg_PoweredBy--></p>
 		</div>
 	</div>
 <!--HTMLFooter-->
