@@ -74,40 +74,41 @@ function loadPreferences() {
 }
 window.onload = function() {
   var o = document.getElementById("options");
-  var lis = o.getElementsByTagName("LI");
+  if (o) {
+	  var lis = o.getElementsByTagName("LI");
 
-  for (var i=0; i< lis.length; i++) {
-    li = lis[i];
-    parts = li.id.split("_");
-    li.title = parts[1] + ": " + parts[2];
+	  for (var i=0; i< lis.length; i++) {
+		 li = lis[i];
+		 parts = li.id.split("_");
+		 li.title = parts[1] + ": " + parts[2];
 
-    li.onclick = function() {
-      var body = document.getElementsByTagName('BODY')[0];
-      var new_option_group = this.id.split("_")[1];
-      var new_option = this.id.split("_")[2];
-      if (new_option_group == 'size') {
-        if (new_option == 'fluid') {
-          replaceClass(body, 'fixed', 'fluid');
-        } else {
-          replaceClass(body, 'fluid', 'fixed');
-        }
-      } else {
-        var colors = 'blue,cyan,green,orange,pink,red,violet'.split(',');
-        var current_color = '';
-        for (var i=0; i<colors.length; i++) {
-          if (hasClass(body, colors[i])) {
-            current_color = colors[i];
-            break;
-          }
-        }
-        if (new_option != current_color) {
-          replaceClass(body, current_color, new_option);
-        }
-      }
-      setCookie('skittlish', body.className, true);
-      return false;
-    }
+		 li.onclick = function() {
+			var body = document.getElementsByTagName('BODY')[0];
+			var new_option_group = this.id.split("_")[1];
+			var new_option = this.id.split("_")[2];
+			if (new_option_group == 'size') {
+			  if (new_option == 'fluid') {
+				 replaceClass(body, 'fixed', 'fluid');
+			  } else {
+				 replaceClass(body, 'fluid', 'fixed');
+			  }
+			} else {
+			  var colors = 'blue,cyan,green,orange,pink,red,violet'.split(',');
+			  var current_color = '';
+			  for (var i=0; i<colors.length; i++) {
+				 if (hasClass(body, colors[i])) {
+					current_color = colors[i];
+					break;
+				 }
+			  }
+			  if (new_option != current_color) {
+				 replaceClass(body, current_color, new_option);
+			  }
+			}
+			setCookie('skittlish', body.className, true);
+			return false;
+		 }
 
-  }
-
+	  }
+	}
 }
