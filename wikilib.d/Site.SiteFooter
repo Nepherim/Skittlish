@@ -8,4 +8,4 @@ host=127.0.0.1
 name=Site.SiteFooter
 rev=6
 targets=
-text=$[Page last modified on {*$LastModified}]
+text=$[Page last modified on] {*$LastModified}
