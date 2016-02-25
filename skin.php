@@ -2,15 +2,15 @@
 /* PmWiki Skittlish skin
  *
  * Examples at: http://pmwiki.com/Cookbook/Skittlish and http://solidgone.org/Skins/
- * Copyright (c) 2009 David Gilbert
- * This work is licensed under a Creative Commons Attribution-Share Alike 3.0 United States License.
+ * Copyright (c)2016 David Gilbert
+ * This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License.
  * Please retain the links in the footer.
- * http://creativecommons.org/licenses/by-sa/3.0/us/
+ * http://creativecommons.org/licenses/by-sa/4.0/
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Skittlish"';
-$FmtPV['$SkinVersion'] = '"1.2.0"';
-$FmtPV['$SkinDate'] = '"20100612"';
+$FmtPV['$SkinVersion'] = '"1.2.1"';
+$FmtPV['$SkinDate'] = '"20160225"';
 
 # Default style
 global $SkinStyle;
@@ -35,7 +35,7 @@ $skittlish_DefaultStyle=$SkinStyle .' ' .$SkinColor;
 
 # Move any (:noleft:) or SetTmplDisplay('PageLeftFmt', 0); directives to variables for access in jScript.
 $FmtPV['$PageOptions'] = "\$GLOBALS['TmplDisplay']['PageOptionsFmt']";
-Markup('nooptions', 'directives',  '/\\(:nooptions:\\)/ei', "SetTmplDisplay('PageOptionsFmt',0)");
+Markup_e('nooptions', 'directives',  '/\\(:nooptions:\\)/i', "SetTmplDisplay('PageOptionsFmt',0)");
 
 # ----------------------------------------
 # - Standard Skin Setup
@@ -45,18 +45,18 @@ $FmtPV['$WikiTag'] = '$GLOBALS["WikiTag"]';
 
 # Move any (:noleft:) or SetTmplDisplay('PageLeftFmt', 0); directives to variables for access in jScript.
 $FmtPV['$LeftColumn'] = "\$GLOBALS['TmplDisplay']['PageLeftFmt']";
-Markup('noleft', 'directives',  '/\\(:noleft:\\)/ei', "SetTmplDisplay('PageLeftFmt',0)");
+Markup_e('noleft', 'directives',  '/\\(:noleft:\\)/i', "SetTmplDisplay('PageLeftFmt',0)");
 $FmtPV['$RightColumn'] = "\$GLOBALS['TmplDisplay']['PageRightFmt']";
-Markup('noright', 'directives',  '/\\(:noright:\\)/ei', "SetTmplDisplay('PageRightFmt',0)");
+Markup_e'noright', 'directives',  '/\\(:noright:\\)/i', "SetTmplDisplay('PageRightFmt',0)");
 $FmtPV['$ActionBar'] = "\$GLOBALS['TmplDisplay']['PageActionFmt']";
-Markup('noaction', 'directives',  '/\\(:noaction:\\)/ei', "SetTmplDisplay('PageActionFmt',0)");
+Markup_e'noaction', 'directives',  '/\\(:noaction:\\)/i', "SetTmplDisplay('PageActionFmt',0)");
 $FmtPV['$TabsBar'] = "\$GLOBALS['TmplDisplay']['PageTabsFmt']";
-Markup('notabs', 'directives',  '/\\(:notabs:\\)/ei', "SetTmplDisplay('PageTabsFmt',0)");
+Markup_e'notabs', 'directives',  '/\\(:notabs:\\)/i', "SetTmplDisplay('PageTabsFmt',0)");
 $FmtPV['$SearchBar'] = "\$GLOBALS['TmplDisplay']['PageSearchFmt']";
-Markup('nosearch', 'directives',  '/\\(:nosearch:\\)/ei', "SetTmplDisplay('PageSearchFmt',0)");
+Markup_e'nosearch', 'directives',  '/\\(:nosearch:\\)/i', "SetTmplDisplay('PageSearchFmt',0)");
 $FmtPV['$TitleGroup'] = "\$GLOBALS['TmplDisplay']['PageTitleGroupFmt']";
-Markup('notitlegroup', 'directives',  '/\\(:notitlegroup:\\)/ei', "SetTmplDisplay('PageTitleGroupFmt',0)");
-Markup('notitle', 'directives',  '/\\(:notitle:\\)/ei', "SetTmplDisplay('PageTitleFmt',0); SetTmplDisplay('PageTitleGroupFmt',0)");
+Markup_e'notitlegroup', 'directives',  '/\\(:notitlegroup:\\)/i', "SetTmplDisplay('PageTitleGroupFmt',0)");
+Markup_e'notitle', 'directives',  '/\\(:notitle:\\)/i', "SetTmplDisplay('PageTitleFmt',0); SetTmplDisplay('PageTitleGroupFmt',0)");
 Markup('fieldset', 'inline', '/\\(:fieldset:\\)/i', "<fieldset>");
 Markup('fieldsetend', 'inline', '/\\(:fieldsetend:\\)/i', "</fieldset>");
 
