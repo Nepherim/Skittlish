@@ -9,8 +9,8 @@
  */
 global $FmtPV;
 $FmtPV['$SkinName'] = '"Skittlish"';
-$FmtPV['$SkinVersion'] = '"1.2.1"';
-$FmtPV['$SkinDate'] = '"20160225"';
+$FmtPV['$SkinVersion'] = '"1.2.2"';
+$FmtPV['$SkinDate'] = '"20160331"';
 
 # Default style
 global $SkinStyle;
